@@ -1,2 +1,2 @@
-print("Hello")
-print("World")
+#!/usr/bin/env python3
+
