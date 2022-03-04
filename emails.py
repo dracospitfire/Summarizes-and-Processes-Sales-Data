@@ -4,7 +4,6 @@ import mimetypes
 import os.path
 import smtplib
 
-
 def generate_email(sender, receiver, subject, body, attachment):
     """Creates an email with an attachement."""
     message = email.message.EmailMessage()
@@ -26,7 +25,6 @@ def generate_email(sender, receiver, subject, body, attachment):
                 filename=attachment_filename,)
 
     return message
-
 
 def send_email(message):
     """Sends the message to the configured SMTP server."""
