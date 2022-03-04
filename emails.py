@@ -17,7 +17,7 @@ def generate_email(sender, receiver, subject, body, attachment):
         attachment_filename = os.path.basename(attachment)
         mime_type, _ = mimetypes.guess_type(attachment)
         mime_type, mime_subtype = mime_type.split("/", 1)
-
+        
         with open(attachment, "rb") as ap:
             message.add_attachment(
                 ap.read(),
